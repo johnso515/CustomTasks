@@ -5,6 +5,10 @@ if (-not $script:PSModuleName) { throw "No PowerShell module detected. Run after
 
 # Depends on PSModuleBuild (via Build) to ensure output exists
 task Deploy-Local PSModuleBuild {
+
+    "Deploy $($script:PSModuleName)) from $script:PSModuleOutputPath)"
+
+
     # Dynamic target: First entry in PSModulePath (system-wide; e.g., /usr/local/share/powershell/Modules)
     $modulePaths = $env:PSModulePath -split [IO.Path]::PathSeparator
     if ($modulePaths.Count -eq 0) { throw "PSModulePath is empty or malformed." }
