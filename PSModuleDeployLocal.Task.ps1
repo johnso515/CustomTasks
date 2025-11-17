@@ -4,7 +4,7 @@
 if (-not $script:PSModuleName) { throw "No PowerShell module detected. Run after module detection." }
 
 # Depends on PSModuleBuild (via Build) to ensure output exists
-task Deploy-Local PSModuleBuild {
+Add-BuildTask Deploy-Local PSModuleBuild {
 
     "Deploy $($script:PSModuleName)) from $script:PSModuleOutputPath)"
 

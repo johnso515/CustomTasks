@@ -1,4 +1,4 @@
-task ShowInfo {
+Add-BuildTask ShowInfo {
     Write-Build Gray
     Write-Build Gray ('Running in:                 {0}' -f $env:BHBuildSystem)
     Write-Build Gray '-------------------------------------------------------'
