@@ -28,7 +28,8 @@ Add-BuildTask GitVersion @{
     Jobs    = {
 
         Write-Information "  (GitVersion) GitSha: $Script:GitSha"
-
+        Write-Build Green 'Convention commits version'
+        
         $VersionFile = Join-Path $TempRoot -ChildPath "$GitSha.json"
         $script:GitVersion = @{}
         foreach ($Name in $PackageNames) {
