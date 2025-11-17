@@ -6,7 +6,7 @@ if (-not $script:PSModuleName) { throw "No PowerShell module detected. Run after
 # Depends on PSModuleBuild (via Build) to ensure output exists
 Add-BuildTask Deploy-Local PSModuleBuild {
 
-    "Deploy $($script:PSModuleName)) from $script:PSModuleOutputPath)"
+    Write-Build Gray "Deploy $($script:PSModuleName)) from $script:PSModuleOutputPath)"
 
 
     # Dynamic target: First entry in PSModulePath (system-wide; e.g., /usr/local/share/powershell/Modules)
