@@ -1,0 +1,21 @@
+{
+  "SchemaVersion": "1.0",
+  "LastModified": "2026-04-05T13:00:38.9805207Z",
+  "SchemaExtensions": [
+    {
+      "Name": "Earthly",
+      "ProcessStep": "CIBuild"
+    },
+    {
+      "Name": "PSDeploy",
+      "ProcessStep": "DeployBuild"
+    }
+  ],
+  "Name": "CustomTasks",
+  "ProjectStruc": "two_tier",
+  "Id": "3df19640-e7ed-4ef5-b6bc-6d725229ffce",
+  "SchemaSet": "PSVAA",
+  "DisplayName": "CustomTasks",
+  "DefinedProjectId": "fc40eb20-48ba-41d7-a002-f764b509596d",
+  "Description": ""
+}
